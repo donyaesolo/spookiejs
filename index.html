@@ -1,0 +1,36 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Your 1st JS!</title>
+		<link rel="stylesheet" href="style.css" />
+		<audio id = "play1" onended = "play2()" src = "audio/ghost.mp3"></audio>
+		<audio id = "play2" onended = "play1()" src = "audio/spooky.mp3"></audio>
+	</head>
+
+	<body>
+		<!-- Notice how each div has an 'onclick' attribute which links to a function in the JS file -->
+		<!-- Each div calls the function when it is clicked -->
+		<div id = "normal">
+			<div class="box green" onclick="turnOrange(this)"><h1 id = "spookie"></h1></div>
+			<div class="box light_blue" onclick="toggleOpaque(this)"></div>
+			<div class="box purple" onclick="disappear(this)"></div>
+			<div class="box red" onclick="turnGreen(this)"></div>
+			<div class="box orange" onclick="bigBoyTime(this)"></div>
+			<div class="box green" onclick="lightsOut(this)"></div>
+			<div class="box light_blue" onclick="showTime(this)"><h1 id = "magic"></h1></div>
+			<div class="box purple" onclick="boo(this)"></div>
+			<img id = "restrict" src = "images/magic.png">
+		</div>
+		<div id = "spook">
+			<div id = "banner">
+				<img class = "cutie" src = "images/cutie.gif" />
+				<h1> Spookie Mode Activated</h1>
+				<img class = "cutie" src = "images/cutie.gif" />
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+
+</html>

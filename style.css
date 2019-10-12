@@ -1,0 +1,76 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: flex;
+	overflow: hidden;
+}
+
+.box {
+	height: 150px;
+	width: calc(100%/8);
+}
+#normal{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+#spook{
+	background-size: 20% 50%;
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+#banner {
+	border-radius: 20px;
+	width: 50%;
+	display: flex;
+	color: orange;
+	background: white;
+	align-items: center;
+	justify-content: center;
+}
+.cutie{
+	max-height: 5%;
+	max-width: 5%;
+	border-radius: 50%;
+}
+#restrict {
+	display: none;
+	position: absolute;
+	top: 90vh;
+	max-height: 25%;
+	max-width: 25%;
+}
+/* opaque = nontransparent, not letting light through, difficult to understand */
+.opaque {
+	opacity: 0.5;
+}
+
+/* colors */
+.green {background-color: #008D24;}
+.light_blue {background-color: #0B69C0;}
+.purple {background-color: #3A246D;}
+.red {background-color: #CA1B22;}
+.orange {background-color: #EA6626;}
+.black {background-color: #000000;}
+.white {background-color: #FFFFFF;}
+.light-grey {background-color: #A9A9A9;}
+.dark-grey {background-color: #707070;}
+
+/* you may choose to use this class for one of the challenges */
+.display-none {
+	display: none;
+}
+
+.invisible {
+	visibility: hidden;
+}
+.fixed-location {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
