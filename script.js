@@ -86,7 +86,7 @@ function play2 () {
         background.style.backgroundImage = 'url(images/kK.jpg)'
         n = 7
       } else if (n === 7) {
-        document.getElementById('spook').style.backgroundImage = 'url(images/e.jpg)'
+        document.getElementById('spook').style.backgroundImage = 'url(images/E.jpg)'
         n = 8
       } else if (n === 8) {
         document.getElementById('spook').style.backgroundImage = 'url(images/l.jpg)'
