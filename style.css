@@ -4,7 +4,6 @@ body {
 	margin: 0;
 	display: flex;
 	overflow: hidden;
-	cursor: url('images/hol336.cur'), auto
 }
 
 .box {
@@ -16,6 +15,16 @@ body {
 	height: 100%;
 	display: flex;
 }
+/* Spongebob */
+#restrict {
+	display: none;
+	position: absolute;
+	top: 90vh;
+	max-height: 25%;
+	max-width: 25%;
+}
+
+/* Spookie Page */
 #spook{
 	background-size: 20% 50%;
 	position: absolute;
@@ -24,7 +33,9 @@ body {
 	height: 100%;
 	align-items: center;
 	justify-content: center;
+	cursor: url('images/hol336.cur'), auto
 }
+/* Text Box on the Spookie theme */
 #banner {
 	border-radius: 20px;
 	width: 50%;
@@ -33,20 +44,24 @@ body {
 	background: white;
 	align-items: center;
 	justify-content: center;
+	font-family: spooky;
 }
+@font-face {
+	font-family: spooky;
+	src: url(fonts/Magic.ttf)
+}
+@font-face {
+	font-family: spooky2;
+	src: url(fonts/SketchBones.ttf)
+}
+/* ghost gif */
 .cutie{
 	padding: 3px;
 	max-height: 10%;
 	max-width: 10%;
 	border-radius: 50%;
 }
-#restrict {
-	display: none;
-	position: absolute;
-	top: 90vh;
-	max-height: 25%;
-	max-width: 25%;
-}
+
 /* opaque = nontransparent, not letting light through, difficult to understand */
 .opaque {
 	opacity: 0.5;
@@ -63,20 +78,7 @@ body {
 .light-grey {background-color: #A9A9A9;}
 .dark-grey {background-color: #707070;}
 
-/* you may choose to use this class for one of the challenges */
-.display-none {
-	display: none;
-}
-
-.invisible {
-	visibility: hidden;
-}
-.fixed-location {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-}
-
+/* Media Query */
 @media screen and (max-width: 414px){
 	#banner{
 	width: 90%;

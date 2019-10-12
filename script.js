@@ -35,7 +35,7 @@ function showTime (elem) {
 function boo (elem) {
   document.getElementById('restrict').style.display = 'block'
   document.getElementById('spookie').style.display = 'block'
-  document.getElementById('spookie').innerHTML = 'Spookie Mode'
+  document.getElementById('spookie').innerHTML = 'Click for Spookie Mode'
   document.getElementById('spookie').addEventListener('click', spookieModeActivate)
 }
 var skelie = new Boolean (false)
@@ -76,6 +76,7 @@ function play2 () {
   reset()
   var background = document.getElementById('spook')
   n = 6
+	document.getElementById('banner').style.fontFamily = 'spooky2'
   document.getElementById('play2').play()
   document.getElementById('play2').onplaying = function () {
     document.getElementById('pic1').src = 'images/skelie.gif'
@@ -105,7 +106,9 @@ function play2 () {
   }
 }
 function play1 () {
+	skelie = false
   reset()
+	document.getElementById('banner').style.fontFamily = 'spooky'
   var background = document.getElementById('spook')
   document.getElementById('play1').play()
   background.style.backgroundImage = 'url(images/s.jpg)'
