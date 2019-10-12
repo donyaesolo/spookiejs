@@ -141,6 +141,7 @@ function reset () {
     clearInterval()
     n = 6
   } else {
+    clearInterval()
     n = 0
   }
 }
