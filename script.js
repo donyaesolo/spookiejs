@@ -169,6 +169,9 @@ function softBoiModeActivate () {
     document.getElementById('spook').style.backgroundSize = 'cover'
     document.getElementById('banner').style.borderRadius = '20px'
   }
+  if (intViewportWidth <= 375) {
+    document.getElementById('bar-text').style.fontSize = '30px'
+  }
   document.getElementById('play3').play()
   background = setInterval(function () {
     if (n === 12) {
