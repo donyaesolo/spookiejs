@@ -146,6 +146,7 @@ function play1 () {
 }
 function softBoiModeActivate () {
   var intViewportWidth = window.innerWidth
+  var intViewportHeight = window.innerHeight
   skelie = 2
   reset()
   n = 12
@@ -169,7 +170,7 @@ function softBoiModeActivate () {
     document.getElementById('spook').style.backgroundSize = 'cover'
     document.getElementById('banner').style.borderRadius = '20px'
   }
-  if (intViewportWidth <= 375) {
+  if (intViewportHeight <= 896) {
     document.getElementById('bar-text').style.fontSize = '30px'
   }
   document.getElementById('play3').play()
