@@ -8,6 +8,9 @@
 		<link rel="stylesheet" href="style.css" />
 		<audio id = "play1" onended = "play2()" src = "audio/ghost.mp3"></audio>
 		<audio id = "play2" onended = "play1()" src = "audio/spooky.mp3"></audio>
+		<audio id = "play3" onended = "play4()" src = "audio/blackbird.mp3"></audio>
+		<audio id = "play4" onended = "play5()" src = "audio/falling.mp3"></audio>
+		<audio id = "play5" onended = "play3()" src = "audio/october.mp3"></audio>
 	</head>
 
 	<body>
@@ -15,7 +18,7 @@
 		<!-- Each div calls the function when it is clicked -->
 		<div id = "normal">
 			<div class="box green" onclick="turnOrange(this)"><center><h1 id = "spookie"></h1></center></div>
-			<div class="box light_blue" onclick="toggleOpaque(this)"></div>
+			<div class="box light_blue" onclick="toggleOpaque(this)"><center><h1 id = "soft"></div></center>
 			<div class="box purple" onclick="disappear(this)"></div>
 			<div class="box red" onclick="turnGreen(this)"></div>
 			<div class="box orange" onclick="bigBoyTime(this)"></div>
@@ -27,7 +30,7 @@
 		<div id = "spook">
 			<div id = "banner">
 				<img class = "cutie" id = "pic1" src = "images/cutie.gif" />
-				<h1> Spookie Mode Activated</h1>
+				<center><h1 id = "bar-text"> Spookie Mode Activated</h1></center>
 				<img class = "cutie" id = "pic2" src = "images/cutie.gif" />
 			</div>
 		</div>

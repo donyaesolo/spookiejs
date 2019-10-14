@@ -54,6 +54,10 @@ body {
 	font-family: spooky2;
 	src: url(fonts/SketchBones.ttf)
 }
+@font-face {
+	font-family: soft;
+	src: url(fonts/Royalacid_o.ttf)
+}
 /* ghost gif */
 .cutie{
 	padding: 3px;
