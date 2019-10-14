@@ -6,13 +6,11 @@
 function makeOpaque (elem) {
   elem.classList.add('opaque')
 }
-
 function turnOrange (elem) {
   elem.classList.remove('green')
   elem.classList.add('orange')
   document.body.style.cursor = 'url(images/cursor.cur)'
 }
-
 function toggleOpaque (elem) {
   elem.classList.toggle('opaque')
 }
@@ -26,20 +24,23 @@ function turnGreen (elem) {
 function bigBoyTime (elem) {
   elem.style.height = '100%'
 }
-
 function lightsOut (elem) {
   document.body.style.backgroundColor = 'black'
 }
 function showTime (elem) {
   document.getElementById('magic').innerHTML = 'Abracadabra I appeared!'
 }
+
+// Custom Function
 function boo (elem) {
   document.getElementById('restrict').style.display = 'block'
   document.getElementById('spookie').style.display = 'block'
   document.getElementById('spookie').innerHTML = 'Click for Spookie Mode'
   document.getElementById('soft').innerHTML = 'Click for Soft Boi Mode'
+  document.getElementById('eboy').innerHTML = 'Click for Eboy Mode'
   document.getElementById('spookie').addEventListener('click', spookieModeActivate)
   document.getElementById('soft').addEventListener('click', softBoiModeActivate)
+	document.getElementById('eboy').addEventListener('click', eBoyModeActivate)
 }
 
 var skelie
@@ -76,7 +77,6 @@ function spookieModeActivate () {
     }
   }, 1000)
 }
-
 function play2 () {
   skelie = 0
   reset()
@@ -144,6 +144,7 @@ function play1 () {
     }, 1000)
   }
 }
+
 function softBoiModeActivate () {
   var intViewportWidth = window.innerWidth
   var intViewportHeight = window.innerHeight
@@ -207,6 +208,58 @@ function play4 () {
 }
 function play5 () {
    document.getElementById('play5').play()
+}
+
+function eBoyModeActivate () {
+	  n = 19
+	document.getElementById('play6').play()
+	document.getElementById('bar-text').style.fontFamily = 'eboy'
+	document.getElementById('bar-text').style.fontSize = '50px'
+	document.getElementById('bar-text').style.color = 'black'
+	document.getElementById('bar-text').classList.add('glow')
+  document.getElementById('title').innerHTML = 'Eboy Mode'
+	document.getElementById('spook').style.cursor = 'url(images/heart.cur), auto'
+	document.getElementById('spook').style.backgroundColor = 'black'
+  document.getElementById('banner').style.borderRadius = '0px'
+  document.getElementById('normal').style.display = 'none'
+  document.getElementById('spook').style.display = 'flex'
+	document.getElementById('spook').style.backgroundSize = '50% 100%'
+	document.getElementById('spook').style.backgroundRepeat = 'no-repeat'
+	document.getElementById('spook').style.backgroundPosition = 'center'
+  document.getElementById('spook').style.backgroundImage = 'url(images/eEe.jpg)'
+	document.getElementById('bar-text').innerHTML = 'Eboy Activated'
+  document.getElementById('pic1').src = 'images/eboy1.jpg'
+  document.getElementById('pic2').src = 'images/eboy2.jpg'
+  setInterval(function () {
+    if (n === 19) {
+      document.getElementById('spook').style.backgroundImage = 'url(images/bB.jpg)'
+      n = 20
+    } else if (n === 20) {
+      document.getElementById('spook').style.backgroundImage = 'url(images/o.png)'
+      n = 21
+    } else if (n === 21) {
+      document.getElementById('spook').style.backgroundImage = 'url(images/yY.jpg)'
+      n = 22
+    } else if (n === 22) {
+      document.getElementById('spook').style.backgroundImage = 'url(images/fF.jpg)'
+      n = 23
+    } else if (n === 23) {
+      document.getElementById('spook').style.backgroundImage = 'url(images/tT.jpg)'
+      n = 24
+    } else if (n === 24) {
+      document.getElementById('spook').style.backgroundImage = 'url(images/eEe.jpg)'
+      n = 19
+    }
+  }, 1000)
+}
+function play3 () {
+   document.getElementById('play6').play()
+}
+function play4 () {
+   document.getElementById('play7').play()
+}
+function play5 () {
+   document.getElementById('play8').play()
 }
 function reset () {
   if (skelie === 0) {

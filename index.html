@@ -6,11 +6,17 @@
 		<title id = "title">Your 1st JS!</title>
 		<link rel = "icon" href = "images/icon.png">
 		<link rel="stylesheet" href="style.css" />
+		<!-- Spookie -->
 		<audio id = "play1" onended = "play2()" src = "audio/ghost.mp3"></audio>
 		<audio id = "play2" onended = "play1()" src = "audio/spooky.mp3"></audio>
+			<!-- Softboy -->
 		<audio id = "play3" onended = "play4()" src = "audio/blackbird.mp3"></audio>
 		<audio id = "play4" onended = "play5()" src = "audio/falling.mp3"></audio>
 		<audio id = "play5" onended = "play3()" src = "audio/october.mp3"></audio>
+			<!-- Eboy -->
+		<audio id = "play6" onended = "play4()" src = "audio/needs.mp3"></audio>
+		<audio id = "play7" onended = "play5()" src = "audio/friend.mp3"></audio>
+		<audio id = "play8" onended = "play3()" src = "audio/sorry.mp3"></audio>
 	</head>
 
 	<body>
@@ -18,9 +24,9 @@
 		<!-- Each div calls the function when it is clicked -->
 		<div id = "normal">
 			<div class="box green" onclick="turnOrange(this)"><center><h1 id = "spookie"></h1></center></div>
-			<div class="box light_blue" onclick="toggleOpaque(this)"><center><h1 id = "soft"></div></center>
+			<div class="box light_blue" onclick="toggleOpaque(this)"><center><h1 id = "soft"></h1></center></div>
 			<div class="box purple" onclick="disappear(this)"></div>
-			<div class="box red" onclick="turnGreen(this)"></div>
+			<div class="box red" onclick="turnGreen(this)"><center><h1 id = "eboy"></h1></center></div>
 			<div class="box orange" onclick="bigBoyTime(this)"></div>
 			<div class="box green" onclick="lightsOut(this)"></div>
 			<div class="box light_blue" onclick="showTime(this)"><h1 id = "magic"></h1></div>

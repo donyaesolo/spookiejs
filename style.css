@@ -58,6 +58,10 @@ body {
 	font-family: soft;
 	src: url(fonts/Royalacid_o.ttf)
 }
+@font-face {
+	font-family: eboy;
+	src: url(fonts/long_shot.ttf)
+}
 /* ghost gif */
 .cutie{
 	padding: 3px;
@@ -81,7 +85,30 @@ body {
 .white {background-color: #FFFFFF;}
 .light-grey {background-color: #A9A9A9;}
 .dark-grey {background-color: #707070;}
+/* glowing text */
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
 
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 15px #fff, 0 0 10px #fff, 0 0 20px #EB2C25, 0 0 30px #EB2C25, 0 0 40px #EB2C25, 0 0 50px #EB2C25, 0 0 60px #EB2C25;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #FF5852, 0 0 30px #FF5852, 0 0 40px #FF5852, 0 0 50px #FF5852, 0 0 60px #FF5852, 0 0 7
+
+
+
+
+
+
+0px #FF5852;
+  }
+}
 /* Media Query */
 @media screen and (max-width: 414px){
 	#banner{
